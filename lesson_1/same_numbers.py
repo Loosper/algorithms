@@ -1,14 +1,14 @@
 N = int(input())
 numbers = [int(a) for a in input().split()]
 
-K = numbers.index(max(numbers))
+# K = numbers.index(max(numbers))
 total = 0
 
 # c?
 # these are indexes
 i = 0
 j = len(numbers) - 1
-while i < K:
+while i != j:
     if numbers[i] == numbers[j]:
         total += 1
         i += 1
