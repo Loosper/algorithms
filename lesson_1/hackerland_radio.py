@@ -2,6 +2,11 @@
 N, radio_range = [int(a) for a in input().split()]
 x = [int(x_temp) for x_temp in input().strip().split(' ')]
 
+
+# REVIEW: this can be done without the city list
+# a better solution is a sorted list with the positions of the houses
+# while iterarting you can skip a lot of empty comparisons
+# (their positions is known in advance) therwise the approach is the same
 N = max(x)
 city = [False] * N
 

@@ -3,6 +3,14 @@ numbers = [int(a) for a in input().split()]
 
 total = 0
 
+# REVIEW: use min_up_to = [], which is a index-by-index mapping of which
+# is the biggest number until this numbeer. Same with min_after = [].
+# This reduces the original array to 2 iteration, and then a signle comparison
+# of all numbers. Remember to make the first and last one infinity
+#   4 1 3 7 9 8 15 17 16 26 - list
+# inf 4 4 7 ...........  inf - max_up_to
+
+
 # index
 last_valid = None
 smallest_valid = None
