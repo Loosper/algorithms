@@ -17,4 +17,7 @@ def find(start, end, needle):
         return find(start, n, needle)
 
 
-print(find(0, N, K))
+if N == 0:
+    print(-1)
+else:
+    print(find(0, N, K))
