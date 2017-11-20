@@ -1,3 +1,5 @@
+# solved in class
+
 # add numbers until you have a postivie sum. Once it goes below 0, reset
 
 # alternate solution:
@@ -16,7 +18,7 @@ for num in numbers:
     if total < 0:
         total = 0
     # for negative intervals, we need the biggest single negative, otherwise
-    # the sum would beome smaller
+    # the sum would become smaller
     total += num
 
     if total > max_sum:
