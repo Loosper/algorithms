@@ -19,5 +19,7 @@ def quicksort(start, end, arr):
         quicksort(i + 1, end, arr)
 
 
+# you can do the same without sorting both sides
+# you just see where k is and continue on that side
 quicksort(0, len(nums) - 1, nums)
 print(nums[K - 1])
